@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกมทายคำถาม</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="container">
+        <h1>เกมทายคำถาม!</h1>
+        <p id="question"></p>
+        <div id="answers">
+            <button class="answer" onclick="checkAnswer(0)">คำตอบ 1</button>
+            <button class="answer" onclick="checkAnswer(1)">คำตอบ 2</button>
+            <button class="answer" onclick="checkAnswer(2)">คำตอบ 3</button>
+        </div>
+        <div id="gift" style="display:none;">
+            <h2>ของขวัญของคุณคือ: <span id="giftMessage"></span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
