@@ -118,3 +118,7 @@ function displayGift() {
 
 displayQuestion();
 
+function playMusic() {
+    document.getElementById("videoContainer").style.display = "block";
+    player.playVideo(); // สั่งให้เล่นวิดีโอ
+}
