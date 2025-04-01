@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.surprise-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
+}
+
+.surprise-btn:hover {
+    background: #e84118;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* อนิเมชั่นลูกโป่งและหัวใจ */
+.floating {
+    position: absolute;
+    bottom: -100px;
+    width: 50px;
+    animation: floatUp 6s infinite;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-150vh); opacity: 0; }
+}
+
+.next-btn {
+    margin-top: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.next-btn:hover {
+    background: #e84118;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background: #ff4757;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e84118;
+}
+
+#gift {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #ffcc00;
+}
+
