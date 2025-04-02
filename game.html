@@ -8,10 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <iframe id="birthdaySong" width="560" height="315" 
-    src="https://www.youtube.com/embed/y3KEdFUA_js?enablejsapi=1" 
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
     
     <div class="container">
         <h1>เกมทายคำถาม!</h1>
@@ -25,6 +21,32 @@
             <h2>ของขวัญของคุณคือ: <span id="giftMessage"></span></h2>
         </div>
     </div>
+
+    <!-- <iframe id="backgroundMusic" width="0" height="0" style="border: none;" 
+    src="https://www.youtube.com/embed/y3KEdFUA_js?autoplay=1&loop=1&playlist=y3KEdFUA_js" 
+    allow="autoplay" hidden>
+</iframe>
+
+<script>
+    // ฟังก์ชั่นในการเล่นและหยุดเพลง
+    const playButton = document.getElementById("playButton");
+    const iframe = document.getElementById("backgroundMusic");
+
+    let isPlaying = false;
+
+    playButton.addEventListener("click", function() {
+        if (isPlaying) {
+            // หยุดเพลง
+            iframe.src = "";
+            playButton.textContent = "เล่นเพลง";
+        } else {
+            // เล่นเพลง
+            iframe.src = "https://www.youtube.com/embed/y3KEdFUA_js?autoplay=1&loop=1&playlist=y3KEdFUA_js";
+            playButton.textContent = "หยุดเพลง";
+        }
+        isPlaying = !isPlaying;
+    });
+</script> -->
 
     <script src="script.js"></script>
 </body>
